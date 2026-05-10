@@ -1,0 +1,35 @@
+{
+  "name": "najah-activewear",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.16.0",
+    "@supabase/supabase-js": "^2.105.4",
+    "iron-session": "^8.0.1",
+    "lucide-react": "^0.400.0",
+    "next": "14.2.5",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "sharp": "^0.33.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "prisma": "^5.16.0",
+    "tailwindcss": "^3.4.4",
+    "tsx": "^4.15.7",
+    "typescript": "^5"
+  }
+}

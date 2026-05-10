@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-beige-100 text-charcoal font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-charcoal text-white px-8 py-3 text-sm tracking-widest uppercase font-sans
+           transition-all duration-300 hover:bg-beige-900 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply border border-charcoal text-charcoal px-8 py-3 text-sm tracking-widest uppercase font-sans
+           transition-all duration-300 hover:bg-charcoal hover:text-white active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply text-charcoal text-sm tracking-widest uppercase font-sans
+           transition-all duration-300 hover:opacity-60;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-charcoal;
+  }
+
+  .section-subtitle {
+    @apply text-sm tracking-widest uppercase text-warm-gray font-sans;
+  }
+
+  .input-field {
+    @apply w-full border border-beige-300 bg-white px-4 py-3 text-sm text-charcoal
+           focus:outline-none focus:border-charcoal transition-colors duration-200
+           placeholder:text-beige-400;
+  }
+
+  .label {
+    @apply block text-xs tracking-widest uppercase text-warm-gray mb-2 font-sans;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4B49A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9E8A6A;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-beige-200 rounded;
+}
